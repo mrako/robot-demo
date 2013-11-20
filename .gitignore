@@ -1,3 +1,5 @@
+deploy/*.war
+
 log.html
 output.xml
 report.html
