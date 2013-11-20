@@ -1,0 +1,10 @@
+*** Settings ***
+
+Documentation  A test suite with a single example test.
+Resource       resource.txt
+
+
+*** Test Cases ***
+
+Opening a Browser
+   Open Browser To Home Page
