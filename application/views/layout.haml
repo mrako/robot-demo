@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title
+    
+    = bootstrap_assets
+    
+    %script(src="js/app.js" type="text/javascript")
+  %body
+    - container :fluid do
+      - row do
+        - span12 do
+          = yield
+
