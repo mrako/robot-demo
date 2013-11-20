@@ -8,6 +8,14 @@
 
     export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
+## Compiling application
+
+    ./init.sh
+
+## Starting application
+
+    java -jar robot/server/ROOT.war
+
 ## Executing tests
 
-    java -cp lib/robotframework-selenium2library-java-1.4.0.1-SNAPSHOT-jar-with-dependencies.jar org.robotframework.RobotFramework tests/01_example_test.txt
+    ./run_tests.sh
