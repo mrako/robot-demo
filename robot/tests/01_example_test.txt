@@ -1,7 +1,10 @@
 *** Settings ***
 
-Documentation  A test suite with a single example test.
-Resource       resource.txt
+Documentation   A test suite with a single example test.
+Resource        resource.txt
+
+Suite Setup     Start Server
+Suite Teardown  Stop Server
 
 
 *** Test Cases ***

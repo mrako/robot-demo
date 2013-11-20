@@ -6,6 +6,8 @@ Documentation  A resource file containing the application specific keywords
 ...            application.
 Library        Selenium2Library
 
+Library         test_application.py
+
 
 *** Variables ***
 
