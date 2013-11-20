@@ -9,7 +9,7 @@ Library        Selenium2Library
 
 *** Variables ***
 
-${SERVER}        localhost:9292
+${SERVER}        localhost:4567
 ${BROWSER}       firefox
 ${DELAY}         0
 ${LOGIN URL}     http://${SERVER}/
