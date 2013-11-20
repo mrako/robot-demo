@@ -8,3 +8,6 @@ Resource       resource.txt
 
 Opening a Browser
    Open Browser To Home Page
+   Input String    tomme
+   Submit Form
+   Page Should Contain  tomme
