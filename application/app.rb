@@ -1,10 +1,12 @@
-require 'sinatra'
+register Sinatra::Twitter::Bootstrap::Assets
 
-get '/' do
-  erb :index
+set :haml, format: :html5
+ 
+get "/" do
+  haml :index
 end
 
 post "/submit" do
-  erb :result
+  haml :result
 end
 
