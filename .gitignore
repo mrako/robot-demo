@@ -1,4 +1,4 @@
-deploy/*.war
+application/deploy/*.war
 
 log.html
 output.xml
