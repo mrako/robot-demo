@@ -10,3 +10,7 @@ post "/submit" do
   haml :result
 end
 
+get "/js-test" do
+  haml :"js-test"
+end
+
