@@ -9,6 +9,16 @@
   %body
     - container :fluid do
       - row do
-        - span12 do
+        .span2
+        .span4
+          %h1 Test Application
+      - row do
+        .span2
+          .ul
+            .li
+              %a{href: "/"}Home
+            .li
+              %a{href: "/js-test"}JS Test
+        - span4 do
           = yield
 
