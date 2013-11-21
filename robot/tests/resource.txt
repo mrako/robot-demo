@@ -15,12 +15,15 @@ ${SERVER}        localhost:8080
 ${BROWSER}       firefox
 ${DELAY}         0
 ${LOGIN URL}     http://${SERVER}/
-
+${JS TEST URL}   http://${SERVER}/js-test
 
 *** Keywords ***
 
 Open Browser To Home Page
     Open Browser  ${LOGIN URL}  ${BROWSER}
+
+Open Browser To JS Test Page
+    Open Browser  ${JS TEST URL}  ${BROWSER}
 
 Input String  [Arguments]  ${value}
     Input Text  string  ${value}

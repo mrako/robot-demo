@@ -1,6 +1,6 @@
 *** Settings ***
 
-Documentation   A test suite with a single example test.
+Documentation   A test suite with couple of example tests.
 Resource        resource.txt
 
 Suite Setup     Start Server
@@ -9,8 +9,17 @@ Suite Teardown  Stop Server
 
 *** Test Cases ***
 
-Opening a Browser
+Submit a form
    Open Browser To Home Page
    Input String    tomme
    Submit Form
    Page Should Contain  tomme
+
+Click button with Javascript action
+   Open Browser To JS Test Page
+   Element Should Contain  output   You haven't clicked
+   Click Button  button
+   Element Should Contain  output   You have clicked once
+   Click Button  button
+   Click Button  button
+   Element Should Contain  output   You have clicked 3 times
