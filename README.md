@@ -12,10 +12,6 @@
 
     ./init.sh
 
-## Starting application
-
-    java -jar robot/server/ROOT.war
-
 ## Executing tests
 
     ./run_tests.sh
